@@ -1,0 +1,25 @@
+.producto {
+  /* border: 1px solid black; */
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px rgba(207, 207, 207, 0.267);
+}
+
+.producto-img {
+  width: 200px;
+}
+
+.producto__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.producto-nombre:first-letter {
+  text-transform: uppercase;
+}

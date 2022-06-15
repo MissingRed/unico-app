@@ -1,0 +1,137 @@
+.main-home {
+  display: grid;
+  position: relative;
+  grid-template-columns: 250px 1fr;
+  grid-template-areas: "sidebar argument";
+  top: 70px;
+  height: calc(100vh - 70px);
+}
+
+.main-home__sidebar {
+  width: 250px;
+  grid-area: sidebar;
+  padding: 30px;
+  padding-right: 0;
+  position: fixed;
+}
+
+.main-home__content {
+  grid-area: argument;
+  padding: 30px;
+}
+
+.main-home__sidebar--tiendas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px rgba(207, 207, 207, 0.267);
+}
+
+.main-home__sidebar--tiendas p {
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.main-home__sidebar--categorias {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  background: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 20px rgba(207, 207, 207, 0.267);
+}
+.main-home__sidebar--categorias strong {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid #e7e3fca6;
+}
+
+.main-home__sidebar--categorias__items {
+  padding: 20px;
+}
+
+.main-home__sidebar--tiendas-img {
+  max-width: 70%;
+  border-radius: 10px;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #e7e3fca6;
+  height: 2px;
+}
+
+.main-home__sidebar--tiendas-button {
+  margin: 20px 0 20px 0;
+  padding: 10px;
+  border: none;
+  border: 1px solid rgba(0, 110, 255, 0.911);
+  color: rgba(0, 110, 255, 0.911);
+  background: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.main-home__sidebar--tiendas-button:hover {
+  background-color: rgba(0, 110, 255, 0.911);
+  border: 1px solid rgba(0, 110, 255, 0.911);
+  color: white;
+}
+
+.main-home__content--search i {
+  position: absolute;
+}
+
+.main-home__content--search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-home__content--search input {
+  padding: 12px;
+  padding-left: 30px;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+}
+
+.main-home__content--search input::placeholder {
+  color: black;
+
+  font-size: medium;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.main-home__content--items {
+  display: grid;
+  width: 100%;
+  margin-top: 40px;
+  grid-template-columns: repeat(auto-fill, 230px);
+  grid-gap: 2rem;
+  justify-content: space-between;
+}
+
+@media (max-height: 768px) {
+  .main-home__sidebar {
+    position: relative;
+  }
+}
